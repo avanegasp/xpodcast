@@ -91,6 +91,13 @@ header .text-header {
     padding: 30px 100px;
 }
 
+.text-header button{
+    background-color: #00F3BB ;
+    padding: 6px 30px;
+    margin-top: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 /* Episodes Section */
 
 .episodes {
@@ -110,7 +117,7 @@ header .text-header {
 .container-episodes{
     display: flex;
     flex-wrap: wrap;
-    padding: 80px 50px 300px 50px;
+    padding: 150px 50px 300px 50px;
     background-color: #0000A3;
     margin-top: -60px;
 }
@@ -132,7 +139,7 @@ header .text-header {
 
 .image-over {
     width: 35%;
-    height: 150%;
+    height: 80%;
     margin-top: -130px;
     position: absolute;
     z-index: 1;
@@ -153,7 +160,7 @@ header .text-header {
     color: #000;
     letter-spacing: 0;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
 }
 
 .galerie-image{
@@ -176,12 +183,20 @@ header .text-header {
 }
 
 .themes h2{
+    font-family: IBMPlexSans;
+    font-size: 38px;
+    color: #000;
+    letter-spacing: 0;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 115px;
 }
 
 .service-ind{
     width: 25%;
+}
+
+.service-ind h3{
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .service-cont{
@@ -195,10 +210,25 @@ header .text-header {
 .container-footer{
     display: flex;
     justify-content: space-evenly;
+    padding: 30px 0;
 }
 
 
 /* Section last news */
+
+.last-news{
+    text-align: center;
+}
+
+.title-button{
+    position: absolute;
+    z-index: 1;
+    margin-top: -110px;
+    right: 30%;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+}
 
 .rectangule-three{
     height: 450px;
@@ -206,6 +236,19 @@ header .text-header {
 
 }
 
+.button-news button{
+    background-color: #00F3BB ;
+    padding: 6px;
+    margin-top: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
 .container-image .container.text {
     width: 48%;
+}
+
+.container-footer h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
 }
