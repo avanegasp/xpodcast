@@ -9,20 +9,21 @@ body {
 }
 
 .container {
-    padding: 0 60px;
+    /* padding: 0 60px; */
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
 
-.title {
-    color: #642a73;
-    font-size: 30px;
+/* .title {
+    color: #fff;
+    font-size: 48px;
     text-align: center;
     margin-bottom: 60px;
+    background: #0000A3;
 
-}
+} */
 
 /* header */
 header {
@@ -69,12 +70,28 @@ header .text-header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: center;    
+}
+
+.text-header h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #060A24;
+    font-size: 64px;
+    letter-spacing: 0;
+    padding: 0 200px;
+
+}
+
+.text-header p{
+    /* font-family: IBMPlexMono; */
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    padding: 30px 100px;
 }
 
 /* Episodes Section */
-
-
 
 .episodes {
     display: inline;
@@ -82,27 +99,70 @@ header .text-header {
     flex-wrap: wrap; */
 }
 
+.episodes h2{
+    font-family: IBMPlexSans;
+    font-size: 38px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+}
+
 .container-episodes{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 50px;
+    padding: 80px 50px 300px 50px;
+    background-color: #0000A3;
+    margin-top: -60px;
+}
+
+.rectangule-two{
+    margin-top: -148px;
 }
 
 
+/* Section Over */
 
+.overgrapping-image{
+    margin-bottom: 300px;
+}
 
+.container-text{
+    padding: 50px 0 0 550px;
+}
+
+.image-over {
+    width: 35%;
+    height: 150%;
+    margin-top: -130px;
+    position: absolute;
+    z-index: 1;
+
+}
 
 /* Section guest */
 
-.guest{
+/* .guest{
     background: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
+} */
+
+.guest h2{
+    font-family: IBMPlexSans;
+    font-size: 38px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .galerie-image{
     display: flex;
     flex-wrap: wrap;
+}
+
+.galerie-pic{
+    width: 33%;
 }
 
 .image-pic img{
@@ -111,9 +171,23 @@ header .text-header {
 
 /* Section themes */
 
+.themes{
+    margin-top: 100px;
+}
+
+.themes h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-ind{
+    width: 25%;
+}
+
 .service-cont{
     display: flex;
     flex-wrap: wrap;
+    padding: 0 0 0 60px;
 }
 
 /* Footer */
@@ -124,18 +198,12 @@ header .text-header {
 }
 
 
+/* Section last news */
 
-/* Section over */
+.rectangule-three{
+    height: 450px;
+    overflow: hidden;
 
-.container-image {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-
-.image-over {
-    width: 40%;
-    height: 40%;
 }
 
 .container-image .container.text {
