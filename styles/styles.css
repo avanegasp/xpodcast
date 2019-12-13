@@ -41,9 +41,25 @@ header {
 
 }
 
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 nav {
     text-align: right;
-    padding: 30px 50px 0 0;
+    padding: 30px 0 0 0;
 }
 
 nav>a {
@@ -51,6 +67,7 @@ nav>a {
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    display: flex;
 }
 
 nav>a:hover {
@@ -120,6 +137,11 @@ header .text-header {
     padding: 150px 50px 300px 50px;
     background-color: #0000A3;
     margin-top: -60px;
+}
+
+.container iframe{
+    width: 50%;
+    height: 232px;
 }
 
 .rectangule-two{
@@ -290,4 +312,113 @@ header .text-header {
     body{
         background-color: cyan;
     }
+
+    header label{
+        display: block;
+        float: right;
+        padding: 8px 40px;
+    }
+
+    nav{
+        /* position: absolute; */
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 35%;
+        margin-left: -70%;
+    }
+
+    nav a{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #btn-menu:checked ~ nav{
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    .text-header h1{
+        font-size: 30px;
+        display: contents;
+    }
+
+    .text-header p{
+        text-align: justify;
+    }
+
+    /* Section episodes */
+
+    .container-episodes{
+        display: flow-root;
+    }
+
+    .container iframe{
+        width: 95%;
+        height: 270px;
+    }
+
+    /* Section overgrapping */
+
+    .container-text{
+        padding: 50px 0 0 240px;
+        margin-top: -55px;
+    }
+
+    .container-text p{
+        font-size: 15px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    /* Section Service */
+
+    .service-ind img{
+        width: 70%;
+    }
+
+    .service-ind h3{
+        font-size: 10px;
+    }
+
+    /* Section news */
+
+    .title-button h2{
+        font-size: medium;
+        padding: 0 40px 0 0 ;
+    }
   }
+
+
+
+  /* @media (max-width: 480px) { */
+    /* body{ */
+        /* background-color: cyan; */
+    /* } */
+
+    /* header label{
+        display: block;
+        float: right;
+        padding: 8px 40px;
+    }
+
+    .menu{ */
+        /* position: absolute; */
+        /* background: #0000EC;
+        width: 70%;
+        margin-right: 70%; 
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    } */
+
+    /* Section themes*/
+
+    /* #btn-menu:checked ~ .menu{
+        margin: 0;
+        transition: all 0.5s;
+    }
+  } */
