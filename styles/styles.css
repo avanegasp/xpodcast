@@ -16,24 +16,16 @@ body {
     overflow: hidden;
 }
 
-/* .title {
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 60px;
-    background: #0000A3;
-
-} */
 
 /* header */
 header {
     width: 100%;
     height: 600px;
-    background: #bc4e9c;
+    /* background: #bc4e9c; */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.637), hsla(317, 45%, 52%, 0.616)), url(../images/pod1.jpg);
+    /* background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.637), hsla(317, 45%, 52%, 0.616)), url(../images/pod1.jpg); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.637), hsla(317, 45%, 52%, 0.616)), url(../images/pod1.jpg);
+    /* background: linear-gradient(to right, hsla(340, 95%, 50%, 0.637), hsla(317, 45%, 52%, 0.616)), url(../images/pod1.jpg); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -55,19 +47,23 @@ header label{
 header label:hover{
     cursor: pointer;
     background: rgba(0, 0, 0, 0.3);
+
 }
 
 nav {
     text-align: right;
-    padding: 30px 0 0 0;
+    padding: 35px 90px 0 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav>a {
-    color: #fff;
+    color: #000;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
     display: flex;
+    padding: 5px 15px;
 }
 
 nav>a:hover {
@@ -81,13 +77,14 @@ nav>a:hover {
 }
 
 header .text-header {
-    display: flex;
+    /* display: flex; */
     height: 430px;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;    
+    text-align: center;
+    padding: 120px 0;    
 }
 
 .text-header h1{
@@ -96,7 +93,7 @@ header .text-header {
     font-size: 64px;
     letter-spacing: 0;
     padding: 0 200px;
-
+    text-align: left;
 }
 
 .text-header p{
@@ -105,16 +102,21 @@ header .text-header {
     color: #060A24;
     letter-spacing: 0;
     line-height: 24px;
-    padding: 30px 100px;
+    padding: 25px 205px;
+    text-align: left;
 }
 
 .text-header button{
     background-color: #00F3BB ;
-    padding: 6px 30px;
+    padding: 11px 43px;
     margin-top: 8px;
     font-family: 'IBM Plex Mono', monospace;
+    margin-left: -705px;
 }
 
+.img-logo{
+    padding: 0 45%;
+}
 /* Episodes Section */
 
 .episodes {
@@ -160,8 +162,8 @@ header .text-header {
 }
 
 .image-over {
-    width: 35%;
-    height: 80%;
+    width: 457.6px;
+    height: 660px;
     margin-top: -130px;
     position: absolute;
     z-index: 1;
@@ -178,11 +180,14 @@ header .text-header {
 
 .guest h2{
     font-family: IBMPlexSans;
-    font-size: 38px;
+    font-size: 48px;
     color: #000;
     letter-spacing: 0;
     text-align: center;
     margin-bottom: 130px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 100px 0 0 165px;
 }
 
 .galerie-image{
@@ -278,7 +283,7 @@ header .text-header {
 
 @media (max-width: 768px) {
     body{
-        background-color: burlywood;
+        /* background-color: burlywood; */
     }
 
     .text-header h1{
@@ -310,7 +315,7 @@ header .text-header {
 
   @media (max-width: 480px) {
     body{
-        background-color: cyan;
+        /* background-color: cyan; */
     }
 
     header label{
@@ -387,38 +392,56 @@ header .text-header {
     }
   }
 
+  @media (max-width: 320px) {
+      body{
+          /* background-color: seagreen; */
+      }
 
 
-  /* @media (max-width: 480px) { */
-    /* body{ */
-        /* background-color: cyan; */
-    /* } */
-
-    /* header label{
+    header label{
         display: block;
         float: right;
         padding: 8px 40px;
     }
 
-    .menu{ */
+    nav{
         /* position: absolute; */
-        /* background: #0000EC;
-        width: 70%;
-        margin-right: 70%; 
-    }
-
-    .menu ul{
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 35%;
+        margin-left: -70%;
+        display: flex;
         flex-direction: column;
     }
 
-    .menu li{
-        border-top: 1px solid white;
-    } */
+    nav a{
+        flex-direction: column;
+        text-align: center;
+    }
 
-    /* Section themes*/
-
-    /* #btn-menu:checked ~ .menu{
+    #btn-menu:checked ~ nav{
         margin: 0;
         transition: all 0.5s;
     }
-  } */
+
+    .text-header p{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .container-text{
+        padding: 50px 0 0 0px;
+    }
+
+    .container-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-text{
+    padding: 400px 0 0 0;
+    }
+
+    
+  }
+
+
